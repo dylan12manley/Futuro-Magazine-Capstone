@@ -2,7 +2,8 @@ import React, { Component } from 'React';
 
 class Shelf extends Component {
     constructor(props) {
-      super(prop);
+      super(props);
+      this.onAddItemToCart = this.onAddItemToCart.bind(this);
 
       this.state = {
         shelfItems: [
@@ -12,9 +13,14 @@ class Shelf extends Component {
         ]
       }
     }
+
+    onAddItemToCart(item) {
+      this.props.addItem(item);
+    }
+
     render() {
       const shelfItems = this.state.shelfItems.map((item, idx) => {
-        return <li key={idx}><button>(+)</button>{item}</li>
+        return <li key={idx}><button onClick={() => this.onAddItemToCart(item)}>[+]</button>{item}</li>
       });
 
       return (
