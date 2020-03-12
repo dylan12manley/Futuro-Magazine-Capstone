@@ -1,0 +1,8 @@
+.carouselImg {
+  height: 50vh;
+  margin-top: 45px;
+}
+ .carouselBody {
+   color: white;
+   text-shadow: 1px 1px black;
+ }
