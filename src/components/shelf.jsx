@@ -1,4 +1,5 @@
-import React, { Component } from 'React';
+import React from 'React';
+import { Component } from 'React';
 
 class Shelf extends Component {
     constructor(props) {
