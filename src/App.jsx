@@ -8,6 +8,7 @@ import Art from './components/ArtPage';
 import LandingPage from './components/LandingPage';
 import Home from './components/HomePage';
 import Error404 from './components/Error404';
+import Example from './components/Example';
 
 class App extends Component {
   render() {
@@ -18,16 +19,9 @@ class App extends Component {
         <Route exact path='/' component={LandingPage} />
         <Route path='/home' component={Home} />
         <Route path='/art' component={Art} />
+        <Route path='/example' component={Example} />
         <Route component={Error404} />
       </Switch>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div>
-          <Cart />
-          </div>
-        </header>
-      </div>
       </div>
       </>
     );
