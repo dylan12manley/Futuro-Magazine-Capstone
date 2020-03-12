@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
@@ -10,9 +11,11 @@ const StoreInstance = Store();
 
 ReactDOM.render(
     <Provider store={StoreInstance}>
-    <App />,
+      <HashRouter>
+        <App />
+      </HashRouter>
     </Provider>,
-     document.getElementById('root')
+    document.getElementById('root')
   );
 
 // If you want your app to work offline and load faster, you can change

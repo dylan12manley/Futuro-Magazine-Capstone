@@ -5,7 +5,6 @@ class Shelf extends Component {
     constructor(props) {
       super(props);
       this.onAddItemToCart = this.onAddItemToCart.bind(this);
-
       this.state = {
         shelfItems: [
           'shampoo',
