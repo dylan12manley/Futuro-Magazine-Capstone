@@ -20,11 +20,3 @@ class Example extends Component {
 
 
 export default Example;
-
-// <div className="Cart">
-// <Shelf addItem={this.props.action.addToCart} />
-// <h2>Cart Items</h2>
-// <ol>
-// {CartItems}
-// </ol>
-// </div>

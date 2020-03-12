@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as cartActions from '../actions/cart';
+import * as articleActions from '../actions/article';
 import Shelf from './shelf';
 
 
