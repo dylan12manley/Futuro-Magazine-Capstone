@@ -14,9 +14,9 @@ class Shelf extends Component {
     }
     render() {
       const shelfItems = this.state.shelfItems.map((item, idx) => {
-        return <li key={idx}><button>(+)</button>(item)</li>
+        return <li key={idx}><button>(+)</button>{item}</li>
       });
-      
+
       return (
         <div>
           <h2>Shelf</h2>
