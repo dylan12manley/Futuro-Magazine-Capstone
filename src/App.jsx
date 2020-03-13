@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap'
+import { Switch, Route} from 'react-router-dom';
 import './App.css';
 import LandingPage from './components/LandingPage';
 import Home from './components/HomePage';
@@ -9,13 +10,15 @@ import Example from './components/Example';
 
 const App = () => (
       <>
-        <div>
+        <div className='App'>
+        <Container fluid>
           <Switch>
             <Route exact path='/' component={LandingPage} />
             <Route path='/home' component={Home} />
             <Route path='/example' component={Example} />
             <Route component={Error404} />
           </Switch>
+        </Container>
         </div>
       </>
     );
