@@ -16,7 +16,7 @@ function Home(){
         <Col xs={7} sm={8} xl={8}>
           <MainArticleFeed/>
         </Col>
-        <Col xs={3} sm={4} xl={8}>
+        <Col xs={3} sm={4} xl={4}>
           <Ads/>
         </Col>
     </Row>

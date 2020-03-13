@@ -56,21 +56,23 @@ function MainArticleFeed(){
             <Card className="cardClass">
             <div className='cardHeader'>
             <Row>
-              <Col><h5 className='cardTitle'>{article.title}</h5></Col>
+            <h5 className='cardTitle'>{article.title}</h5>
+            </Row>
+            <Row>
+              <Col><h6 className='cardTitleB'>{article.author}</h6></Col>
               <Col>
-                <h6 className='cardTitleB'>{article.author}
-                <span className='publishDate'>{article.publishDate}</span></h6>
+                <h6> <span className='publishDate'>{article.publishDate}</span></h6>
               </Col>
             </Row>
             </div>
-              <Card.Img className="cardImg" src={article.mainImage} alt="The article's main image." />
-              <Card.ImgOverlay>
-                <Card.Text>
-                  <div className="articleSubtitle" >
-                  <p className='ArticleTeaserOnCard'>{article.articleTeaser}</p>
-                  </div>
-                </Card.Text>
-              </Card.ImgOverlay>
+            <div className="cardImg">
+              <Card.Img className="cardImgImg" src={article.mainImage} alt="The article's main image." />
+            </div>
+              <Card.Text>
+              <div className="articleSubtitle" >
+              <p className='ArticleTeaserOnCard'>{article.articleTeaser}</p>
+              </div>
+              </Card.Text>
             </Card>
           )
         }
