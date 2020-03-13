@@ -1,0 +1,28 @@
+#landingPage{
+  background: rgb(93,93,93);
+  background: linear-gradient(87deg, rgba(93,93,93,0.7692307692307692) 0%, rgba(241,241,241,0.8373626373626374) 8%, rgba(208,208,208,0.810989010989011) 69%, rgba(195,195,195,0.9692307692307692) 93%, rgba(128,128,128,0.8989010989010989) 97%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.landingImgs {
+  width: 90vw;
+}
+
+.startImgBtn {
+  height: 20vh;
+  width: 50vw;
+  margin: 0% 25%;
+}
+
+.fTrans {
+  height: 30vh;
+  width: 22vw;
+  margin: 3% 39%;
+}
+
+.fTrans2 {
+  height: 30vh;
+  width: 22vw;
+  margin: 0% 50%;
+}
