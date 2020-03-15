@@ -9,7 +9,7 @@ import "./../styles/mainArticlesFeed.css"
 
 const fullArticlesList = [
   {
-    title: 'Why is Rick so Sick, fo Real tho?',
+    title: 'Why is Rick so Sick, for Real tho?',
     author: 'Joey P',
     publishDate: 'Febuary 19, 2020',
     articleTeaser: "YO , look Rick and Michelle are like Futuro's  favorite people besides Elon and Grimes lol. Wait Why? Because self actualization isn't even a fucking thought , It just is mothafuckafucking thing. Like just waking up , opening your eyes and just doing shit , no negative self talk , no barriers , no fucks given.",
@@ -51,17 +51,18 @@ function MainArticleFeed(){
     <div>
       <div className="articleFeed">
         <div className="articlesAvailableDiv">
-        <h1 style={{fontSize: "40px", fontWeight:"700", paddingLeft: "7.5%"}}>Complete News Feed </h1>
           {fullArticlesList.map((article, index) =>
             <Card className="cardClass">
             <div className='cardHeader'>
             <Row>
-            <h5 className='cardTitle'>{article.title}</h5>
+            <Col xs={8} sm={9}><h5 className='cardTitle'>{article.title}</h5></Col>
+            <Col>
+              <h6 className='cardTitleB'>{article.author}</h6>
+              <h6> <span className='publishDate'>{article.publishDate}</span></h6>
+            </Col>
             </Row>
             <Row>
-              <Col><h6 className='cardTitleB'>{article.author}</h6></Col>
               <Col>
-                <h6> <span className='publishDate'>{article.publishDate}</span></h6>
               </Col>
             </Row>
             </div>

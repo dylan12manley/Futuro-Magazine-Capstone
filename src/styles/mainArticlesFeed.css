@@ -8,6 +8,7 @@
 .publishDate {
   float: right;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 .articleSubtitle {
   margin-top: 5px;
@@ -29,5 +30,5 @@
   overflow: hidden;
 }
 .cardTitle {
-  margin-left: 5vw;
+  margin-left: 0;
 }
