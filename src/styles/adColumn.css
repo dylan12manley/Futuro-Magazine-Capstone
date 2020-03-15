@@ -1,6 +1,7 @@
 .adColumnBody {
   margin-top: 20px;
-  width: 34vw
+  width: 33vw;
+  padding-right: 1vw;
 }
 .adImg{
   padding: 1%;
